@@ -4,7 +4,6 @@
 
     cp ../../converted.lmp .
 
-
 ## Run
 
     lmp -in singlepoint.in
