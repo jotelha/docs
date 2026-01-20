@@ -23,3 +23,16 @@ Now, polyply does not get the 1-4 pairs right. Generate all 1-4 pairs from topol
 and insert them into the ITP file with
 
     python insert_custom_pairs_list.py -p pairs.dat -i molecule.itp -o molecule_with_pairs.itp
+
+Double-check that charge of generated polymer is zero with
+
+    python check_total_charge.py molecule.itp
+
+Double-check molecular weight with
+
+    $ python check_molecular_weight.py default.gro 
+    Molecular weight: 23390.597 g/mol
+    Composition:
+       C: 1396
+       H: 2540
+       O: 254
