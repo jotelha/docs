@@ -1,0 +1,10 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "custom-ffnonbonded.itp"
+#include "molecule.itp"
+[ system ]
+; name
+Single PAMA block polymer
+
+[ molecules ]
+; name  number
+PAMA_BLOCK 1
