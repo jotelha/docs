@@ -1,0 +1,24 @@
+integrator      = md
+dt              = 0.001          ; 1 fs
+nsteps          = 200000          ; 200 ps
+
+cutoff-scheme   = Verlet
+coulombtype     = PME
+rcoulomb        = 1.0
+rvdw            = 1.0
+
+constraints     = h-bonds
+constraint-algorithm = lincs
+lincs-order     = 6
+lincs-iter      = 2
+
+tcoupl          = v-rescale
+tc-grps         = System
+tau_t           = 0.5
+ref_t           = 300
+
+gen_vel         = yes
+gen_temp        = 300
+gen_seed        = -1
+
+pcoupl          = no
