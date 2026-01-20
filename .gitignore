@@ -1,0 +1,4 @@
+build
+venv
+jotelha_docs/version.py
+*.egg-info
