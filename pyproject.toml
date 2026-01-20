@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm[toml]>=6.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jotelha-docs"
+description = "Collection of notes and documentations"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Johannes L. Hörmann", email = "johannes.laurin@gmail.com"}
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+docs = [
+    "sphinx",
+    "sphinx_rtd_theme",
+    "sphinxcontrib-spelling",
+    "sphinxcontrib-bibtex",
+    "myst-parser==4.0.1"
+]
+
+[project.urls]
+Documentation = "https://dserver.readthedocs.io"
+Repository = "https://github.com/jotelha/docs"
+
+[tool.setuptools]
+packages = ["jotelha_docs"]
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
+write_to = "jotelha_docs/version.py"
+

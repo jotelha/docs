@@ -10,6 +10,10 @@ project = 'jotelha-docs'
 copyright = '2025, Johannes L. Hörmann'
 author = 'Johannes L. Hörmann'
 
+import jotelha_docs
+version = jotelha_docs.__version__
+release = jotelha_docs.__version__
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
