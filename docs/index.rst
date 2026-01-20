@@ -7,7 +7,9 @@
    :parser: myst_parser.sphinx_
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    :caption: Contents:
+   :glob:
 
-   self
+   self   
+   */index
