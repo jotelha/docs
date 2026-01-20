@@ -1,4 +1,3 @@
-Provenance:
 # NVT equilibration
 
 ## Provenance
