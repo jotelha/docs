@@ -5,4 +5,5 @@ nvt.trr
 mdout.mdp
 gmx.log
 step*
+nvt.cpt
 nvt_prev.cpt
