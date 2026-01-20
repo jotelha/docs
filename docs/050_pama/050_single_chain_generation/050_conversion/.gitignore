@@ -1,0 +1,13 @@
+ener.edr
+energy.xvg
+gromacs_stderr.txt
+gromacs_stdout.txt
+intermol.log
+lammps_stderr.txt
+lammps_stdout.txt
+log.lammps
+md.log
+mdout.mdp
+single_point
+single_point_new_improper
+topol.tpr
