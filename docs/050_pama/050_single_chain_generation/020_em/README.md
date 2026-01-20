@@ -1,4 +1,4 @@
-# Enrgy minimization
+# Energy minimization
 
 ## Provenance
 

@@ -1,6 +1,6 @@
 # Polyply
 
-PAMA parameters for various monomer building blocks are found within extended oplsaaLigParGen library of https://github.com/jotelha/polyply_1.0/tree/2025-12-01-PAMA-parameters.
+PAMA parameters for various monomer building blocks are found within extended oplsaaLigParGen library of [https://github.com/jotelha/polyply_1.0/tree/2025-12-01-PAMA-parameters].
 
 ## Use
 

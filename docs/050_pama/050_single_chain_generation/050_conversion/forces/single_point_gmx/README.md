@@ -1,4 +1,4 @@
-# Single point GROMACS force evaluation
+# Single point GROMACS forces evaluation
 
 ## Provenance
 

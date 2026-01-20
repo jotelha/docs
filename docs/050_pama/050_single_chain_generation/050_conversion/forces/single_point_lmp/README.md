@@ -1,4 +1,4 @@
-# Single-point LAMMPS forces
+# Single point LAMMPS forces evaluation
 
 ## Provenance
 
