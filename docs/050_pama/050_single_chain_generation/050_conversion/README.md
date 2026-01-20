@@ -36,7 +36,7 @@ Converted with and evaluate enrgies with
 
     intermol-convert --gro_in default.gro system.top --lammps --oname converted --energy --lmppath $(which lmp) --gropath $GMXBIN --verbose
 
-## Output
+## Verification
 
 The difference in potential energy between GROMACS and LAMMPS system should be small, e.g.
 
@@ -72,3 +72,5 @@ Input gromacs potential energy:         35320.98046875
 Difference in potential energy from gromacs=>lammps conversion:         2.15920325
 =======================================================================
 ```
+
+Next, compare per-atom forces with single-point force evaluations found within the `forces` sub folder.
