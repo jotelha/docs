@@ -32,7 +32,7 @@ Created intermol venv with:
 
 ## Convert
 
-Converted with and evaluate enrgies with
+Convert and evaluate energies with
 
     intermol-convert --gro_in default.gro system.top --lammps --oname converted --energy --lmppath $(which lmp) --gropath $GMXBIN --verbose
 

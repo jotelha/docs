@@ -7,6 +7,6 @@ Used tools are `polyply`, `GROMACS`, `InterMol`, and `LAMMPS`.
 ## Folder content
 
 * 000_polyply: polymer generation
-* 020_em: energy minimzation
+* 020_em: energy minimization
 * 030_nvt: NVT equilibration
 * 050_conversion: Conversion with InterMol

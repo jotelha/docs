@@ -1,6 +1,6 @@
 # Polyply
 
-PAMA parameters for various monomer building blocks are found within extended oplsaaLigParGen library of [https://github.com/jotelha/polyply_1.0/tree/2025-12-01-PAMA-parameters].
+PAMA parameters for various monomer building blocks are found within the extended oplsaaLigParGen library at [https://github.com/jotelha/polyply_1.0/tree/2025-12-01-PAMA-parameters](https://github.com/jotelha/polyply_1.0/tree/2025-12-01-PAMA-parameters).
 
 ## Use
 
@@ -12,11 +12,26 @@ Next, generate topology with
 
     polyply gen_params -lib oplsaaLigParGen -o molecule.itp -name PAMA_BLOCK -seqf sequence.json
 
-Eventually, generate coordinates with
+Place the user-provided `oplsaa.ff` force field directory and `custom-ffnonbonded.itp` (custom non-bonded parameters for the PAMA monomers) in the working directory.
+
+Manually create a `system.top`, i.e.
+
+    #include "oplsaa.ff/forcefield.itp"
+    #include "custom-ffnonbonded.itp"
+    #include "molecule.itp"
+    [ system ]
+    ; name
+    Single PAMA block polymer
+
+    [ molecules ]
+    ; name  number
+    PAMA_BLOCK 1
+
+Next, generate coordinates with
 
     polyply gen_coords -p system.top -o default.gro -name PAMA_BLOCK -dens 300
 
-Now, polyply does not get the 1-4 pairs right. Generate all 1-4 pairs from topology with
+Note that polyply does not generate 1-4 pairs correctly. Generate all 1-4 pairs from the topology with
 
     python generate_pairs_from_dihedrals.py -i molecule.itp -o pairs.dat
 
